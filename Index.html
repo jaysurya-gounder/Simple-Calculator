@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Style.css"/>
+    <title>Simple Calculator</title>
+</head>
+<body>
+    <section>
+        <div id="main">
+            <div id="sub-main">
+                <input type="text" id="inpbox" readonly/>
+                <table>
+                    <tr class="sign">
+                        <td onclick="toDisplay('+')">+</td>
+                        <td onclick="toDisplay('-')">-</td>
+                        <td onclick="toDisplay('*')">×</td>
+                        <td onclick="toDisplay('/')">÷</td>
+                    </tr>
+                    <tr>
+                        <td onclick="toDisplay('7')">7</td>
+                        <td onclick="toDisplay('8')">8</td>
+                        <td onclick="toDisplay('9')">9</td>
+                        <td rowspan="4" class="equal" onclick="calculateResult()">=</td>
+                    </tr>
+                    <tr>
+                        <td onclick="toDisplay('4')">4</td>
+                        <td onclick="toDisplay('5')">5</td>
+                        <td onclick="toDisplay('6')">6</td>
+                    </tr>
+                    <tr>
+                        <td onclick="toDisplay('1')">1</td>
+                        <td onclick="toDisplay('2')">2</td>
+                        <td onclick="toDisplay('3')">3</td>
+                    </tr>
+                    <tr>
+                        <td onclick="toDisplay('0')">0</td>
+                        <td onclick="toDisplay('.')">.</td>
+                        <td onclick="toClear()">C</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </section>
+</body>
+<script src="./Script.js"></script>
+</html>
